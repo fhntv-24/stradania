@@ -3,6 +3,10 @@
 #include <string.h>
 #include "r.h"
 int main(){
+        FILE*f=fopen("b.bin","wb");
+        if(!f)
+                return 0;
+        fclose(f);
         int n;
         int sw;
         magaz*q;
